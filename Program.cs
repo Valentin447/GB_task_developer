@@ -1,9 +1,9 @@
-﻿string[] arr = { "Test1", "aa", "hello", "(-:"};
+﻿string[] arr = { "Test1", "aa", "hello", "(-:" };
 int quantityElements = 0;
 
 for (int i = 0; i < arr.Length; i++)
 {
-    if(arr[i].Length <= 3)
+    if (arr[i].Length <= 3)
     {
         quantityElements++;
     }
@@ -17,5 +17,15 @@ for (int j = 0; j < arr.Length; j++)
     {
         arrRes[k] = arr[j];
         k++;
+    }
+}
+
+ShowArrey(arrRes);
+
+void ShowArrey(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write(arr[i] + "  ");
     }
 }
