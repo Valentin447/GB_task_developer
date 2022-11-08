@@ -8,4 +8,14 @@ for (int i = 0; i < arr.Length; i++)
         quantityElements++;
     }
 }
+
 string[] arrRes = new string[quantityElements];
+int k = 0;
+for (int j = 0; j < arr.Length; j++)
+{
+    if (arr[j].Length <= 3)
+    {
+        arrRes[k] = arr[j];
+        k++;
+    }
+}
